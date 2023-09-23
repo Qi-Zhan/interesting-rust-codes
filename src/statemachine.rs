@@ -23,13 +23,13 @@
 //! ```
 //! next example try to create a A instance directly, which will not compile
 //!
-//! ```should_panic
+//! ```compile_fail
 //! use interesting_rust_codes::statemachine::*;
 //! let a = A { _secret: () };
 //! ```
 //! next example try to reuse old states, which will not compile
 //!
-//! ```should_panic
+//! ```compile_fail
 //! use interesting_rust_codes::statemachine::*;
 //! let a = A::new();
 //! let b = a.b();
@@ -37,7 +37,7 @@
 //! ```
 //!
 //! next example try to take an incorrect transition, which will not compile
-//! ```should_panic
+//! ```compile_fail
 //! use interesting_rust_codes::statemachine::*;
 //! let a = A::new();
 //! let c = a.c();
@@ -45,8 +45,6 @@
 //!
 //! # Reference
 //! [cs242](https://stanford-cs242.github.io/f19/lectures/08-2-typestate)
-
-#![allow(dead_code)]
 
 pub struct A {
     _secret: (),
