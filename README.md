@@ -9,3 +9,4 @@ Collection of elegant or interesting rust code snippets, not necessarily useful.
 | [church_number.rs](src/church_number.rs)   | Type level programming, Church encoding |
 | [seqcst.rs](src/bin/seqcst.rs)             | Atomic, Memory model                    |
 | [cpu.rs](src/cpu.rs)                       | Declarive macro                         |
+| [strsplit.rs](src/strsplit.rs)             | Lifetime                                |
